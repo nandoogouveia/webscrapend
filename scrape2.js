@@ -34,6 +34,11 @@ app.use((req, res) => {                         //informa a página correta para
 });
 
 
+app.listen(process.env.PORT, process.env.IP, () => {            //faz com que seu servidor seja capaz de aceitar um parâmetro do ambiente para qual porta escutar.
+    console.log(`server running at ${process.env.PORT} and ${process.env.IP}`);  //então o servidor roda no processo tal e na porta tal e IP tal
+});
+
+
 
 
 

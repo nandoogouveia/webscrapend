@@ -29,6 +29,8 @@ app.use((req, res) => {
 });
 
 
-
+app.listen(process.env.PORT, process.env.IP, () => {
+   
+});
 
 

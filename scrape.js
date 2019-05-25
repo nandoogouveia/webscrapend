@@ -24,3 +24,8 @@ app.get('/scrape', (req, res) => {
     });
     // res.send('eae');
 });
+
+
+app.use((req, res) => {
+    res.send('pagina certa é a /scrape');
+});

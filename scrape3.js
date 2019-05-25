@@ -25,7 +25,7 @@ app.get('/scrape3', (req, res) => {
 
 
 app.use((req, res) => {
-    
+    res.send('pagina certa é a /scrape3');
 });
 
 

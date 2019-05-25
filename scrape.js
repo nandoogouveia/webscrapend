@@ -29,3 +29,10 @@ app.get('/scrape', (req, res) => {
 app.use((req, res) => {
     res.send('pagina certa é a /scrape');
 });
+
+
+app.listen(process.env.PORT, process.env.IP, () => {
+    console.log(`server running at ${process.env.PORT} and ${process.env.IP}`);
+});
+
+

@@ -29,5 +29,12 @@ app.get('/scrape2', (req, res) => {                                         //O 
 });
 
 
+app.use((req, res) => {                         //informa a página correta para uso
+    res.send('pagina certa é a /scrape2');      //mostra informação 
+});
+
+
+
+
 
 

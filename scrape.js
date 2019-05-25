@@ -36,3 +36,8 @@ app.listen(process.env.PORT, process.env.IP, () => {
 });
 
 
+// https.get('https://fatecrl.edu.br/', (error, response, html) => {
+//     const $ = cheerio.load(html);
+    
+//     console.log($);
+// });

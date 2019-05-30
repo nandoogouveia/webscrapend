@@ -8,7 +8,7 @@ const app = express();              //é uma função de nível superior exporta
 
 app.get('/scrape', (req, res) => {
     request('http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/indices.htm', (error, response, html) => {
-        if (!error && response.statusCode == 200){
+        if (!error && response.statusCode == 200){  //resposta de requisição bem sucedida
             //console.log (html);
             const $ = cheerio.load(html);
             

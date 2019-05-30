@@ -3,6 +3,9 @@
 //
 // A simple chat server using Socket.IO, Express, and Async.
 //
+const app = express();  
+const css = express();
+
 var http = require('http');
 var path = require('path');
 
@@ -23,6 +26,12 @@ var io = socketio.listen(server);
 router.use(express.static(path.resolve(__dirname, 'client')));
 var messages = [];
 var sockets = [];
+
+
+
+app.use(express.static(__dirname + '/public'));
+
+
 
 io.on('connection', function (socket) {
     messages.forEach(function (data) {

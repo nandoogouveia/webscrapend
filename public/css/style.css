@@ -1,4 +1,4 @@
-.align-list {
+/*.align-list {
     height: 25%;
 }
 .box_page {
@@ -21,4 +21,48 @@ body, html {
 user agent stylesheet
 html {
     color: -internal-root-color;
+}
+
+
+element.style {
+}
+
+.listo .detail div.list_item {
+    padding-bottom: 10px !important;
+}
+.listo .detail .list_item {
+    padding: 10px;
+}
+.listo .list .list_item {
+    margin-bottom: 0;
+}
+.listo .detail .list_item {
+    padding-bottom: 18px !important;
+    clear: left;
+}
+.odd {
+    background-color: #f6f6f5;
+    border: #fff 1px solid;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+#root {
+    font-family: Verdana, Arial, sans-serif;
+    color: #f10606;
+    font-size: 13px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+*/
+
+
+#main h1 {
+    width: 646px;
+    float: left;
+    margin-left: 20px;
+    font-size: 500px;
 }

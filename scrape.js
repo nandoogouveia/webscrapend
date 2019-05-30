@@ -7,7 +7,7 @@ const app = express();              //é uma função de nível superior exporta
 
 
 app.get('/scrape', (req, res) => {
-    request('https://fatecrl.edu.br/', (error, response, html) => {
+    request('http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/indices.htm', (error, response, html) => {
         if (!error && response.statusCode == 200){
             //console.log (html);
             const $ = cheerio.load(html);
@@ -17,8 +17,8 @@ app.get('/scrape', (req, res) => {
             //    console.log(siteHeading.html());
             //    console.log(siteHeading.text());
             // const output = a.find('p').text;
-            res.send($('.home-description').text());
-            console.log($('.home-description').text());
+            res.send($('.bg-conteudo').html());
+            console.log($('.bg-conteudo').text());
        
         }
     });

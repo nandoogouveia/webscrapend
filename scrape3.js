@@ -13,7 +13,7 @@ app.get('/scrape3', (req, res) => {
              const $ = cheerio.load(html);
             
             
-             res.send($('#main').text());
+             res.send($('#main').html());
              console.log($('#main').text());
             
        

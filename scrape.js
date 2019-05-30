@@ -6,7 +6,7 @@ const express = require('express'); //cria um aplicativo/app express, onde a fun
 const app = express();              //é uma função de nível superior exportada pelo módulo.
 
 
-app.get('/scrape', (req, res) => {
+app.get('/scrape', (req, res) => {    //aplicação 'app', busca 'get' ou faz a requisição ao site 'www' 
     request('http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/indices.htm', (error, response, html) => {
         if (!error && response.statusCode == 200){  //resposta de requisição bem sucedida
             //console.log (html);

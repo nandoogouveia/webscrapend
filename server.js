@@ -30,7 +30,7 @@ var messages = [];
 var sockets = [];
 
 
-app.use(express.static('public'));
+//app.use(express.static('assets/css'));
 
 
 

@@ -9,7 +9,7 @@
   },
   "author": "Mostafa Eweda <mo.eweda@gmail.com>",
   "dependencies": {
-    "async": "~0.2.8",
+    "async": "~3.2.2",
     "cheerio": "^1.0.0-rc.3",
     "express": "^3.2.6",
     "request": "^2.88.0",
